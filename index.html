@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Memory Flip Game 🔥</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Memory Flip Game 🔥</h1>
+  
+  <div class="info">
+    <select id="levelSelect">
+      <option value="easy">Easy (4x4)</option>
+      <option value="medium">Medium (5x5)</option>
+      <option value="hard">Hard (6x6)</option>
+    </select>
+
+    <select id="themeSelect">
+      <option value="letters">Letters</option>
+      <option value="numbers">Numbers</option>
+      <option value="emojis">Emojis</option>
+    </select>
+
+    <button id="startBtn">Start Game 🚀</button>
+    <div id="timer">Time: 60</div>
+    <div id="moves">Moves: 0</div>
+    <div id="highScore">Best Time: --</div>
+  </div>
+
+  <!-- The game board will be dynamically populated with cards -->
+  <div id="game-board" class="game-board"></div>
+
+  <!-- Sounds -->
+  <audio id="flipSound" src="sounds/button-click.wav"></audio>
+  <audio id="matchSound" src="sounds/hint-revealed.wav"></audio>
+  <audio id="winSound" src="sounds/cheering.wav"></audio>
+  <audio id="loseSound" src="sounds/game-over.wav"></audio>
+  <audio id="tickTockSound" src="sounds/tick-tock.wav"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
